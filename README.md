@@ -27,6 +27,7 @@ sk:歯先の限界厚さ=転位すると歯先とがりが生ずるが，強度�
 出力としては基本的にギアA,Cの転位係数ですが，その後CAD作図するのに必要になるため各ギアの転位係数とかみ合いピッチ円半径が出力されます．
 
 paradox planetary gearbox optimization using below article.
+
 https://www.jstage.jst.go.jp/article/kikaic1979/62/596/62_596_1548/_article
 
 ※gear A is sun gear, B is planetary gear, C is fixed ring gear and D is moving ring gear.
