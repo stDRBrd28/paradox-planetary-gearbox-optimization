@@ -40,9 +40,6 @@ zd = 39
 
 # 圧力角
 a_a = 20 * np.pi / 180
-a_b = 20 * np.pi / 180
-a_c = 20 * np.pi / 180
-a_d = 20 * np.pi / 180
 
 # 噛み合い率
 eps_c = 1.4
@@ -55,6 +52,10 @@ xb = 0.5
 
 ########################################################
 # 計算
+
+a_b = a_a
+a_c = a_a
+a_d = a_a
 
 eps_1c = eps_c/2
 eps_2c = eps_c/2
@@ -134,11 +135,11 @@ xa = (za+zb)/(2*np.tan(a_c))*(inv(a_ba) - inv(a_c)) - xb
 nu = (1-zc/zd)/(1-zc/zd*nu_c*nu_d)*(1+zc/za*nu_a*nu_c)/(1+zc/za)
 print('この不思議遊星歯車列の効率は{:f}%です'.format(nu*100))
 
-print('噛み合いピッチ円直径 a_ba:{:f}'.format(r_g_a/np.cos(a_ba)))
-print('噛み合いピッチ円直径 b_ba:{:f}'.format(r_g_b/np.cos(a_ba)))
-print('噛み合いピッチ円直径 b_bc:{:f}'.format(r_g_b/np.cos(a_bc)))
-print('噛み合いピッチ円直径 c_bc:{:f}'.format(r_g_c/np.cos(a_bc)))
-print('噛み合いピッチ円直径 d_bd:{:f}'.format(r_g_d/np.cos(a_bd)))
+print('噛み合いピッチ円半径 a_ba:{:f}'.format(r_g_a/np.cos(a_ba)))
+print('噛み合いピッチ円半径 b_ba:{:f}'.format(r_g_b/np.cos(a_ba)))
+print('噛み合いピッチ円半径 b_bc:{:f}'.format(r_g_b/np.cos(a_bc)))
+print('噛み合いピッチ円半径 c_bc:{:f}'.format(r_g_c/np.cos(a_bc)))
+print('噛み合いピッチ円半径 d_bd:{:f}'.format(r_g_d/np.cos(a_bd)))
 print('xa={:f}'.format(xa))
 print('xb={:f}'.format(xb))
 print('xc={:f}'.format(xc))
